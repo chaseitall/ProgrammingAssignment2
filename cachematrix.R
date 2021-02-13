@@ -32,3 +32,34 @@ cacheSolve <- function(x, ...) {
         x$setinv(m)
         m
 }
+
+
+## Readme
+#Use the following to test the above functions
+#> A <- matrix( c(5, 1, 0,
+#                3,-1, 2,
+#                4, 0,-1), nrow=3, byrow=TRUE)  #replace with any other matrix
+#> det(A)  #make sure not zero
+#> solve(A)
+# [,1]    [,2]   [,3]
+# [1,] 0.0625  0.0625  0.125
+# [2,] 0.6875 -0.3125 -0.625
+# [3,] 0.2500  0.2500 -0.500
+
+
+#> x <- makeCacheMatrix(A)
+#> cacheSolve(x)
+# [,1]    [,2]   [,3]
+# [1,] 0.0625  0.0625  0.125
+# [2,] 0.6875 -0.3125 -0.625
+# [3,] 0.2500  0.2500 -0.500
+
+#> cacheSolve(x)
+# getting cached data
+# [,1]    [,2]   [,3]
+# [1,] 0.0625  0.0625  0.125
+# [2,] 0.6875 -0.3125 -0.625
+# [3,] 0.2500  0.2500 -0.500
+
+
+
